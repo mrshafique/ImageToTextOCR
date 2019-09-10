@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_tb"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/main_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_tv"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_fab"
+            app:srcCompat="@drawable/ic_add"
+            app:fabSize="mini"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>
